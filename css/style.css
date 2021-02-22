@@ -4,31 +4,85 @@
   box-sizing: border-box;
 }
 
+/* DEBUG:
+colori:
+navleft: #000000;
+navbuttom: #282828;
+sfondo main: #141922;
+barra trasparente: #080b12;
+testo grigio: #a3a3a3;
+
+font: Regular 400 Semi-bold 600
+ */
+
 .clearfix::after{
   content: "";
   display: table;
   clear: both;
 }
 
+body{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* struttura sito */
 main{
   height: calc(100vh - 100px);
-  background-color: pink;
 }
 
 footer{
   height: 100px;
-  background-color: red;
+  background-color: #282828;
 }
-
 
 .navleft{
   width: 300px;
   height: calc(100vh - 100px);
-  background-color: orange;
+  background-color: #000000;
   float: left;
 }
 
 .corpo{
   height: calc(100vh - 100px);
-  background-color: lightblue;
+  background-color: #141922;
+}
+
+/* struttura navleft */
+.navleft{
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.navleft img{
+  max-height: 50px;
+}
+
+.flex{
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+}
+
+.barranav{
+  margin-top: 20px;
+}
+
+.iconanav{
+  width: 40px;
+}
+
+.barra{
+  border-left: 5px solid green;
+}
+
+.vocemenu a{
+  text-decoration: none;
+  color: #a3a3a3;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.vocemenu a:hover{
+  color:white;
 }
