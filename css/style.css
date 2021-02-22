@@ -10,28 +10,25 @@
   clear: both;
 }
 
-.contain{
-  display: flex;
-  justify-content: flex-start;
+main{
+  height: calc(100vh - 100px);
+  background-color: pink;
 }
 
-.navtop{
-  float: right;
-  background-color:pink;
-  height: 80px;
-  width: 90vw;
+footer{
+  height: 100px;
+  background-color: red;
 }
+
 
 .navleft{
-  float: left;
-  background-color: lightblue;
-  height: 90vh;
   width: 300px;
+  height: calc(100vh - 100px);
+  background-color: orange;
+  float: left;
 }
 
-.navbuttom{
-  align-items: flex-end;
-  background-color:blue;
-  height: 300px;
-  width: 300px;
+.corpo{
+  height: calc(100vh - 100px);
+  background-color: lightblue;
 }
