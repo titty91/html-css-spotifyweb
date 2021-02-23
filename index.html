@@ -14,13 +14,16 @@
   <body>
     <main>
       <div id="contenuto clearfix">
-        <div class="navleft">
-          <img src="img/logo.svg" alt="logo spotify">
+
+        <div class="navleft clearfix">
+          <div class="logo">
+            <img src="img/logo.svg" alt="logo spotify">
+          </div>
           <div class="barranav flex">
             <div class="iconanav barra">
-              <a href="#"><img src="img/home.svg" alt="casetta"></a>
+              <img src="img/home.svg" alt="casetta">
             </div>
-            <div class="vocemenu">
+            <div class="vocemenu bianco">
               <a href="#">Home</a>
             </div>
           </div>
@@ -29,7 +32,52 @@
               <a href="#"><img src="img/search.svg" alt="cerca"></a>
             </div>
             <div class="vocemenu">
-              <a href="#">Home</a>
+              <a href="#">Cerca</a>
+            </div>
+          </div>
+          <div class="barranav flex">
+            <div class="iconanav">
+              <a href="#"><img src="img/libreria.svg" alt="libreria"></a>
+            </div>
+            <div class="vocemenu">
+              <a href="#">La tua libreria</a>
+            </div>
+          </div>
+
+          <div class="playlist">
+            <h4>PLAYLIST</h4>
+            <div class="barranav flex">
+              <div class="aggiungi">
+                <i class="fas fa-plus"></i>
+              </div>
+              <div class="vocemenu">
+                <a href="#">Crea Playlist</a>
+              </div>
+            </div>
+            <div class="lista">
+              <ul>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+                <li><a href="#">Nome Playlist</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="box">
+
+          </div>
+          <div class="instaggiungi">
+            <div class="installa">
+              <img src="img/download.svg" alt="download">
+              <span><a href="#">Installa app</a></span>
+              <hr class="linea">
+            </div>
+            <div class="barranav flex account">
+              <img src="img/profile.svg" alt="profilo">
+              <span class="nome">John Doe</span>
             </div>
           </div>
         </div>
@@ -41,6 +89,45 @@
       </div>
     </main>
     <footer>
+      <div class="flexx">
+        <div class=" fotterleft flexx">
+          <div class="barranav flex">
+            <div class="iconanav">
+              <img src="img/sinister.jpeg" alt="anteprima album">
+            </div>
+            <div class="dati">
+              <a class="tit" href="#">Home</a><br><a class="sottit" href="#">Brano nome</a>
+            </div>
+          </div>
+          <div class="icone">
+            <a href="#"><i class="far fa-heart"></i></a>
+            <a href="#"><i class="far fa-folder"></i></a>
+          </div>
+        </div>
+        <div class="fottercenter">
+          <div class="music">
+            <a href="#"><i class="fas fa-random"></i></a>
+            <a href="#"><i class="fas fa-step-backward"></i></a>
+            <a class="play" href="#"><i class="far fa-play-circle"></i></a>
+            <a href="#"><i class="fas fa-step-forward"></i></a>
+            <a href="#"><i class="fas fa-redo"></i></a>
+          </div>
+          <div class="timer">
+            <span>0.25</span>
+            <div class="carica">
+              <span class="caricas"></span>
+            </div>
+            <span>4.35</span>
+
+          </div>
+        </div>
+        <div class="fotteright">
+          <a href="#"><i class="fas fa-list"></i></a>
+          <a href="#"><i class="fas fa-desktop"></i></a>
+          <a href="#"><i class="fas fa-volume-up"></i></a>
+        </div>
+      </div>
+
     </footer>
   </body>
 </html>

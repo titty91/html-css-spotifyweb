@@ -13,6 +13,14 @@ barra trasparente: #080b12;
 testo grigio: #a3a3a3;
 
 font: Regular 400 Semi-bold 600
+
+simboli play:
+<i class="far fa-heart"></i>
+<i class="far fa-folder"></i>
+
+<i class="fas fa-list"></i>
+<i class="fas fa-desktop"></i>
+<i class="fas fa-volume"></i>
  */
 
 .clearfix::after{
@@ -33,6 +41,10 @@ main{
 footer{
   height: 100px;
   background-color: #282828;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .navleft{
@@ -40,6 +52,7 @@ footer{
   height: calc(100vh - 100px);
   background-color: #000000;
   float: left;
+  bottom: 0;
 }
 
 .corpo{
@@ -49,12 +62,15 @@ footer{
 
 /* struttura navleft */
 .navleft{
-  padding: 15px;
   display: flex;
   flex-direction: column;
 }
 
-.navleft img{
+.logo{
+  padding: 20px;
+}
+
+.logo img{
   max-height: 50px;
 }
 
@@ -65,15 +81,16 @@ footer{
 }
 
 .barranav{
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.iconanav{
+.iconanav img{
   width: 40px;
+  margin-left: 15px;
 }
 
 .barra{
-  border-left: 5px solid green;
+  border-left: 5px solid #7FFF00;
 }
 
 .vocemenu a{
@@ -83,6 +100,240 @@ footer{
   padding-left: 10px;
 }
 
+.bianco a{
+  color: white;
+}
+
 .vocemenu a:hover{
   color:white;
+}
+
+.playlist h4{
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+.aggiungi {
+  width: 40px;
+  height: 40px;
+  background-color: #a3a3a3;
+  text-align: center;
+  margin-left: 15px;
+}
+
+.aggiungi i{
+  font-size: 25px;
+  margin-top: 8px;
+}
+
+.aggiungi:hover{
+  background-color: white;
+}
+
+.lista ul{
+  margin-top: 20px;
+}
+
+.lista a{
+  color: #a3a3a3;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.lista a:hover{
+  color: white;
+}
+
+.lista ul li{
+  list-style: none;
+  margin: 10px auto;
+}
+
+.installa img{
+  width: 20px;
+  color: #a3a3a3;
+}
+
+.box{
+  width: 10px;
+  height: 230px;
+  background-color: #000000;
+}
+
+.instaggiungi{
+  margin-left: 15px;
+}
+
+.installa{
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.installa a{
+  color: #a3a3a3;
+  text-decoration: none;
+}
+
+.installa a:hover{
+  color: white;
+}
+
+.linea{
+  border: 1px solid #a3a3a3;
+  width: 255px;
+  margin: 10px 0;
+}
+
+.account{
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.account img{
+  width: 40px;
+  height: 40px;
+  background-color: #a3a3a3;
+  border-radius: 50px;
+}
+
+.nome{
+  color: white;
+  font-weight: bolder;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+@media all and (max-height:779px) {
+
+  .lista{
+    height: 150px;
+    overflow: auto;
+  }
+}
+
+/* footer */
+
+footer{
+  padding-top: 15px;
+}
+.fotterleft{
+  width: 325px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media all and (max-width:741px) {
+  .fotterleft{
+    min-width: 195px;
+  }
+
+}
+
+.tit{
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.dati{
+  padding-left:10px;
+}
+
+
+.sottit{
+  font-size: 12px;
+  color: #a3a3a3;
+  text-decoration: none;
+}
+
+.sottit:hover{
+    text-decoration: underline;
+}
+
+.icone{
+  margin: 5px;
+}
+
+.icone a{
+  color: #a3a3a3;
+}
+
+.icone a:hover{
+  color: white;
+}
+
+.icone i{
+  padding-left: 10px;
+}
+
+.boxx{
+  border: 1px solid white;
+  height: 100%;
+}
+
+.flexx{
+  display: flex;
+  align-items: center;
+}
+
+.fottercenter{
+  width: 80%;
+}
+
+.music{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.music a{
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.play{
+  font-size:30px;
+}
+
+.play:hover{
+  font-size:32px;
+}
+
+.timer{
+  text-align: center;
+  color: white;
+  font-size: 10px;
+  margin-top: 5px;
+}
+
+.timer span{
+  padding: 0 5px;
+}
+
+.carica{
+  display:inline-block;
+  width: 400px;
+  height: 5px;
+  border-radius: 5px;
+  background-color: lightgrey;
+}
+
+.caricas{
+  width: 20%;
+  height: 5px;
+  background-color: grey;
+}
+
+.fotteright{
+  width: 300px;
+}
+
+.fotteright a{
+  color: white;
+  text-decoration: none;
+  padding: 0 10px;
 }
