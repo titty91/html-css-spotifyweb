@@ -57,10 +57,18 @@ footer{
 
 .corpo{
   height: calc(100vh - 100px);
+  width: calc(100% - 300px);
   background-color: #141922;
+  float: left;
 }
 
 /* struttura navleft */
+
+.flexgroup{
+  display: flex;
+  flex-direction: column;
+
+}
 .navleft{
   display: flex;
   flex-direction: column;
@@ -106,6 +114,10 @@ footer{
 
 .vocemenu a:hover{
   color:white;
+}
+
+.playlist{
+  flex-grow: 1;
 }
 
 .playlist h4{
@@ -155,12 +167,6 @@ footer{
 .installa img{
   width: 20px;
   color: #a3a3a3;
-}
-
-.box{
-  width: 10px;
-  height: 230px;
-  background-color: #000000;
 }
 
 .instaggiungi{
@@ -229,7 +235,7 @@ footer{
   position: fixed;
   top: 0;
   right: 0;
-  width: 86%;
+  width: calc(100% - 300px);
 }
 
 .bottone{
@@ -278,10 +284,28 @@ footer{
   margin-left: 50px;
   margin-top: 5px;
 }
+
+.album{
+  max-width: 350px;
+  max-height: 400px;
+  background-color: orange;
+  color: white;
+  margin-top: 20px;
+  margin-right: 20px;
+  float: left;
+}
+
+.copertina img{
+  width: 100%;
+}
+
+
+
 /* ----------- */
 
 .listmusic{
   margin: 50px auto;
+  padding: 0 20px;
 }
 
 .listmusic h2{
@@ -289,11 +313,6 @@ footer{
   color: white;
 }
 
-.copertina{
-  width: 100px;
-  height: 100px;
-  background-color: red;
-}
 
 /* footer */
 
