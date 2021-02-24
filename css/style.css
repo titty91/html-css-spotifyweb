@@ -292,6 +292,10 @@ footer{
   float: left;
 }
 
+.copertina{
+  position: relative;
+}
+
 .copertina img{
   width: 100%;
 }
@@ -300,7 +304,6 @@ footer{
   display: none;
   position: absolute;
   top: 0;
-  left: 15px;
   height: 100%;
   max-height: 320px;
   width: 100%;
@@ -310,7 +313,7 @@ footer{
 
 .overlay i{
   color: white;
-  font-size: 7rem;
+  font-size: 5rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -339,7 +342,8 @@ footer{
 
 .listmusic h3{
   font-weight: bold;
-  font-size: calc(1px + 1vw);
+  padding: 10px;
+  /* font-size: calc(1px + 1vw); */
 }
 
 .listmusic span{
