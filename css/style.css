@@ -319,7 +319,7 @@ footer{
 
 .copertina:hover .overlay{
     display: block;
-    
+
 }
 
 /* ----------- */
@@ -327,6 +327,8 @@ footer{
 .listmusic{
   margin: 50px auto;
   padding: 0 20px;
+  height: calc(100vh - 320px);
+  overflow: auto;
 }
 
 .listmusic h2{
