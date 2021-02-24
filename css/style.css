@@ -14,13 +14,6 @@ testo grigio: #a3a3a3;
 
 font: Regular 400 Semi-bold 600
 
-simboli play:
-<i class="far fa-heart"></i>
-<i class="far fa-folder"></i>
-
-<i class="fas fa-list"></i>
-<i class="fas fa-desktop"></i>
-<i class="fas fa-volume"></i>
  */
 
 .clearfix::after{
@@ -57,6 +50,7 @@ footer{
 .corpo{
   height: calc(100vh - 100px);
   width: calc(100% - 300px);
+  overflow: auto;
   background-color: #141922;
   float: left;
 }
@@ -92,7 +86,7 @@ footer{
 }
 
 .iconanav img{
-  width: 40px;
+  max-width: 40px;
   margin-left: 15px;
 }
 
@@ -286,6 +280,8 @@ footer{
   margin-top: 5px;
 }
 
+/*  dati album */
+
 .album{
   max-width: 350px;
   max-height: 450px;
@@ -307,9 +303,7 @@ footer{
   position: absolute;
   top: 0;
   height: 100%;
-  /* max-height: 320px; */
   width: 100%;
-  /* max-width: 320px; */
   background-color: rgba(8,11,18, 0.5);
 }
 
@@ -324,7 +318,38 @@ footer{
 
 .copertina:hover .overlay{
     display: block;
+}
 
+.copertine{
+  position: relative;
+}
+
+.copertine img{
+  width: 100%;
+  border-radius: 100%;
+}
+
+.overlaycerchio{
+  display: none;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(8,11,18, 0.5);
+  border-radius: 100%;
+}
+
+.overlaycerchio i{
+  color: white;
+  font-size: 5rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.copertine:hover .overlaycerchio{
+    display: block;
 }
 
 /* ----------- */
@@ -332,21 +357,13 @@ footer{
 .listmusic{
   padding: 0 20px;
   height: calc(100vh - 320px);
-  overflow: auto;
-}
-
-.listmusic h2{
-  text-align: left;
-  color: white;
-  font-weight: bold;
-  margin: 20px 0;
 }
 
 .listcont h2{
   text-align: left;
   color: white;
   font-weight: bold;
-  /* margin: 20px 0; */
+  margin: 50px 0px 10px 0px;
 }
 
 .listmusic h3{
@@ -358,9 +375,10 @@ footer{
   color: #a3a3a3;
 }
 
-.listmusic p{
+.listcont p{
   color: #a3a3a3;
-  font-size: calc(1px + 1vw);
+  text-align: left;
+  margin: 10px 0 20px 0;
 }
 
 /* footer */
@@ -379,7 +397,6 @@ footer{
   .fotterleft{
     min-width: 195px;
   }
-
 }
 
 .tit{
