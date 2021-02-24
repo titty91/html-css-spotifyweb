@@ -41,7 +41,6 @@ main{
 footer{
   height: 100px;
   background-color: #282828;
-  overflow: hidden;
   position: fixed;
   bottom: 0;
   width: 100%;
@@ -52,7 +51,7 @@ footer{
   height: calc(100vh - 100px);
   background-color: #000000;
   float: left;
-  bottom: 0;
+  /* bottom: 0; */
 }
 
 .corpo{
@@ -139,6 +138,7 @@ footer{
 .aggiungi i{
   font-size: 25px;
   margin-top: 8px;
+  color: black;
 }
 
 .aggiungi:hover{
@@ -288,10 +288,7 @@ footer{
 .album{
   max-width: 350px;
   max-height: 400px;
-  background-color: orange;
   color: white;
-  margin-top: 20px;
-  margin-right: 20px;
   float: left;
 }
 
@@ -299,7 +296,31 @@ footer{
   width: 100%;
 }
 
+.overlay{
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 100%;
+  max-height: 320px;
+  width: 100%;
+  max-width: 320px;
+  background-color: rgba(8,11,18, 0.5);
+}
 
+.overlay i{
+  color: white;
+  font-size: 7rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.copertina:hover .overlay{
+    display: block;
+    
+}
 
 /* ----------- */
 
@@ -311,14 +332,33 @@ footer{
 .listmusic h2{
   text-align: left;
   color: white;
+  font-weight: bold;
 }
 
+.listmusic h3{
+  font-weight: bold;
+  font-size: calc(1px + 1vw);
+}
+
+.listmusic span{
+  color: #a3a3a3;
+}
+
+.listmusic p{
+  color: #a3a3a3;
+  font-size: calc(1px + 1vw);
+}
+
+.listcont{
+  margin: 100px 0;
+}
 
 /* footer */
 
 footer{
   padding-top: 15px;
 }
+
 .fotterleft{
   width: 325px;
   display: flex;
@@ -350,7 +390,7 @@ footer{
 }
 
 .sottit:hover{
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .icone{
