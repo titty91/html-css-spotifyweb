@@ -47,6 +47,10 @@ footer{
   /* bottom: 0; */
 }
 
+/* .navleft img{
+  max-width: 50px;
+} */
+
 .corpo{
   height: calc(100vh - 100px);
   width: calc(100% - 300px);
@@ -75,6 +79,10 @@ footer{
   max-height: 50px;
 }
 
+.logotelefoto{
+  display: none;
+}
+
 .flex{
   display: flex;
   justify-content:flex-start;
@@ -86,7 +94,7 @@ footer{
 }
 
 .iconanav img{
-  max-width: 40px;
+  width: 40px;
   margin-left: 15px;
 }
 
@@ -287,11 +295,13 @@ footer{
   max-height: 450px;
   color: white;
   margin-right: 20px;
+  margin-bottom: 20px;
   float: left;
 }
 
 .copertina{
   position: relative;
+
 }
 
 .copertina img{
@@ -359,6 +369,7 @@ footer{
   height: calc(100vh - 320px);
 }
 
+
 .listcont h2{
   text-align: left;
   color: white;
@@ -385,6 +396,7 @@ footer{
 
 footer{
   padding-top: 15px;
+  z-index: 999;
 }
 
 .fotterleft{
@@ -460,6 +472,7 @@ footer{
   color: white;
   text-decoration: none;
   margin: 0 10px;
+  padding: 0px 10px;
 }
 
 .play{
@@ -490,11 +503,17 @@ footer{
 }
 
 .caricas{
+  position: relative;
   width: 30%;
   height: 5px;
   background-color: lightgrey;
   border-radius: 5px;
 }
+
+.caricas:hover{
+  background-color: #7FFF00;
+}
+
 /* ---------------------------------- */
 .fotteright{
   width: 300px;
@@ -509,4 +528,64 @@ footer{
 }
 .volume{
   min-width: 30%;
+}
+
+
+/* -------------------------- */
+
+@media all and (max-width:767px){
+  .navleft{
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .super{
+    flex-grow: 1;
+  }
+
+  .vocemenu{
+    display: none;
+  }
+
+  .logo{
+    display: none;
+  }
+
+  .logotelefoto{
+    display: block;
+    width: 40px;
+    margin-left: 22px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+
+  .playlist{
+    display: none;
+  }
+
+  .installa span{
+    display: none;
+  }
+
+  .linea{
+    display: none;
+  }
+
+  .nome{
+    display: none;
+  }
+
+  .corpo{
+    height: calc(100vh - 100px);
+    width: calc(100% - 90px);
+    overflow: auto;
+    background-color: #141922;
+    float: left;
+  }
+
+  .trasparenza{
+    width: calc(100% - 90px);
+  }
+
 }
