@@ -292,10 +292,10 @@ footer{
 
 .album{
   max-width: 350px;
-  max-height: 450px;
+  min-height: 360px;
   color: white;
-  margin-right: 20px;
-  margin-bottom: 20px;
+  padding-right: 20px;
+  /* margin-bottom: 20px; */
   float: left;
 }
 
@@ -375,7 +375,7 @@ footer{
   text-align: left;
   color: white;
   font-weight: bold;
-  margin: 50px 0px 10px 0px;
+  margin: 40px 0px 10px 0px;
 }
 
 .listmusic h3{
@@ -383,7 +383,7 @@ footer{
   padding: 10px;
 }
 
-.listmusic span{
+.album span{
   color: #a3a3a3;
 }
 
