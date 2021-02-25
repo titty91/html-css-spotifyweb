@@ -306,6 +306,7 @@ footer{
 
 .copertina img{
   width: 100%;
+  object-fit: cover;
 }
 
 .overlay{
