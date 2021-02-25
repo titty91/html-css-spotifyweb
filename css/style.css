@@ -47,10 +47,6 @@ footer{
   /* bottom: 0; */
 }
 
-/* .navleft img{
-  max-width: 50px;
-} */
-
 .corpo{
   height: calc(100vh - 100px);
   width: calc(100% - 300px);
@@ -289,6 +285,10 @@ footer{
 }
 
 /*  dati album */
+
+[class*-"col-"]{
+  float: left;
+}
 
 .album{
   max-width: 350px;
