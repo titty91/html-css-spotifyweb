@@ -396,7 +396,6 @@ footer{
 /* footer */
 
 footer{
-  padding-top: 15px;
   z-index: 999;
 }
 
@@ -457,6 +456,7 @@ footer{
 .flexx{
   display: flex;
   align-items: center;
+  height: 100%;
 }
 /* ----------------------------- */
 .fottercenter{
